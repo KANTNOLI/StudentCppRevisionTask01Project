@@ -21,8 +21,6 @@
 */
 
 bool taskX(int width, int length, int side) {
-	int check = width > 0 && length > 0 && side > 0 ? 1 : 0;
 
-		 
-	return check == 1 && width <= side && length <= side;
+	return  width > 0 && length > 0 && side > 0 && width <= side && length <= side ? true : false;
 }
